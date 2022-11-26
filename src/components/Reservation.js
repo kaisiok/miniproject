@@ -1,4 +1,4 @@
-function Reservation({doctor,time}){
+function Reservation({doctor="hello",time="world"}){
     return (
     <div className="reservation_row">
         <div id="reservation_col1" className="reservation_col">{doctor}</div>

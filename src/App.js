@@ -7,15 +7,17 @@ import "./App.css"
 
 function App() {
   const [schedules,setSchedules]=useState(data)
-  
+
   const searchByName = (name) =>{
+    //이 함수가 실행되면 schedules의 값이 달라져야 합니다.
     setSchedules(data.filter((el)=>{
       return el.doctor===name||name===""
     }))
   }
 
+
   return (
-    <div className="outer">
+    <div className="outer" id="outer-warpper">
       <div className="inner">
         <h2>진료 시간 예약하기</h2>
         <SearchBar searchByName={searchByName}/>
@@ -24,7 +26,7 @@ function App() {
           <div id="table_top2">진료 시간</div>
           <div id="table_top3">예약</div>
         </div>
-        <Reservations list={schedules}/>
+        <Reservations schedules={schedules}/>
       </div>
     </div>
   )
