@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function SearchBar({searchByName}){
+function SearchBar(){
   const [name,setName]=useState('')
 
   const handleChange = (e) =>{
@@ -11,7 +11,6 @@ function SearchBar({searchByName}){
     e.preventDefault()
     console.log("검색")
     //handleSubmit 함수가 실행될 때 searchbyName 함수가 작동해야합니다.
-    searchByName(name)
   }
 
   return (
