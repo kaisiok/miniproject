@@ -21,7 +21,6 @@ input{
   height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 .table_top_wrapper{
   display: flex;
@@ -46,21 +45,26 @@ input{
   width: 500px;
   height: 25px;
   display:flex;
-  justify-content: center;
-  align-items: center;
 }
 .reservation_col{
   border: 1px solid black;
 }
 #reservation_col1{
+  height: 25px;
   flex-basis: 200px;
   text-align: center;
+  padding: 3px;
 }
 #reservation_col2{
+  height: 25px;
   text-align: center;
   flex-basis: 400px;
+  padding: 3px;
 }
 #reservation_col3{
+  height: 25px;
   flex-basis: 200px;
+  padding: 1px;
+  vertical-align: middle;
   text-align: center
 }
